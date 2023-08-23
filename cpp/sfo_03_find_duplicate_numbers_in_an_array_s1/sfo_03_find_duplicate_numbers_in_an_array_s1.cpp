@@ -11,7 +11,7 @@ class Solution {
 public:
     int findRepeatNumber(vector<int>& nums) {
         unordered_map<int, bool> map;
-        for(int num : nums) {
+        for(int num : nums) {//定义一个num作为中间变量来对nums数组中的数字进行输出
             if(map[num]) return num;
             map[num] = true;
         }
